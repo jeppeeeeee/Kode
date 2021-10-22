@@ -1,0 +1,256 @@
+/**
+ * projekt: Flexbox tutorial
+ * fil: css/style.css
+ **/
+/* Google fonts (NB: load før :root) */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+/* Skrifttype 1: font-family: 'Quicksand', sans-serif; */
+/* Skrifttype 2: font-family: 'Montserrat', sans-serif; */
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --lilla: #32202b;
+  --grey: #dcdadb;
+  --brun: #281004;
+
+  /* fonte */
+  --tekst: 'Quicksand', sans-serif;
+  /* brødtekst */
+  --overskrift: 'Montserrat', sans-serif;
+  /* overskrifter */
+
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  background-image: url(images/baggrundgraa.png);
+  background-position: center;
+  background-size: cover;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.navbar{
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  background-color: lightgrey;
+}
+
+.logo{
+  width: 200px;
+  cursor: pointer;
+}
+
+nav{
+  flex: 1;
+  padding-left: 60px;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+.content h1{
+  font-size: 60px;
+  font-weight: 100;
+  margin-top: 24px;
+  margin-bottom: 15px;
+  color: ;
+}
+.content p{
+  font-size: 20px;
+  color: black;
+}
+.content{
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 30%
+}
+.contentartikel{
+  font-size: 60px;
+  font-weight: 100;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 20%
+}
+.contentmusik{
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-decoration: none;
+
+}
+.content .btn{
+  display: inline-block;
+  background: white;
+  border-radius: 6px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #black;
+  box-shadow: 3px 8px 22px rgba(94,28,68,0.15)
+}
+.arrow-icons {
+  margin-top: 40px;
+  display: flex;
+}
+.arrow-icons img{
+  width: 40px;
+  margin-right: 25px;
+}
+.tyler{
+  height: 350px;
+  position: absolute;
+  top: 250px;
+  right: 100px;
+}
+.suicideboys {
+  height: 500px;
+  position: absolute;
+  top: 900px;
+  right: 100px;
+}
+.suicideboys1 {
+  height: 500px;
+  position: absolute;
+  top: 200px;
+  right: 100px;
+}
+.eightoeight {
+  height: 380px;
+  position: absolute;
+  top: 1700px;
+  right: 100px;
+}
+.eightoeight1 {
+  height: 380px;
+  position: absolute;
+  top: 200px;
+  right: 100px;
+}
+article{
+  background-color: lightgrey;
+  font-size: 20px;
+  width: 1200px;
+  border: 2px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+
+/*footer*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container2{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*billeder*/
+.billeder {
+  margin-top: 50px;
+  padding-left: 100px;
+}
+.produkt {
+  width: 30%;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
